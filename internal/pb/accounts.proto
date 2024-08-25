@@ -1,0 +1,13 @@
+syntax = "proto3";
+package requests;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "types/requests";
+
+message Account {
+    string name = 1;
+    string address = 2;
+    bool active = 3;
+    google.protobuf.Timestamp createdAt = 4;
+}
